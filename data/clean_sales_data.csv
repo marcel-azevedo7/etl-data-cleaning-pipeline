@@ -1,0 +1,7 @@
+transaction_id,customer_name,customer_email,sale_amount,transaction_type,sale_date
+TXN102,BOB JONES,bob@gmail.com,200.5,SALE,2026-09-02
+TXN105,Eva Green,eva@domain.com,1200.0,SALE,2026-09-05
+TXN101,Alice Smith,alice@example.com,150.0,SALE,2026-09-01
+TXN103,Charlie Brown,charlie@outlook.com,50.0,SALE,2026-09-03
+TXN104,David Miller,david@dom.com,-10.0,REFUND,2026-09-04
+UNKNOWN_7,Frank Wright,frank@domain.com,300.0,SALE,2026-09-06
