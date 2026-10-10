@@ -1,6 +1,6 @@
-# Production-Grade ETL Sales Data Pipeline
+# Production‑Grade ETL Sales Data Pipeline
 
-A modular Python and SQL ETL (Extract, Transform, Load) pipeline that ingests raw, unformatted sales data, stages it in SQLite, applies advanced data cleaning and validation, and exports sanitized deliverables.
+A modular Python and SQL ETL (Extract, Transform, Load) pipeline that ingests raw, unformatted sales data, stages it in SQLite, applies advanced data cleaning and validation, and exports sanitized deliverables. Designed to demonstrate real‑world data engineering practices including synthetic data generation, SQL transformations, and automated quality checks.
 
 ## Architecture & Data Flow
 
@@ -48,9 +48,9 @@ A modular Python and SQL ETL (Extract, Transform, Load) pipeline that ingests ra
 ## Code Overview
 Below are key modules of the ETL pipeline:
 
-### main.py
-Master controller that runs all stages sequentially.
-![Main Script](images/main_py.png)
+### generate_data.py
+Creates synthetic raw sales data with deliberate operational errors for testing the cleaning pipeline.
+![Data Generation](images/generate_data.png)
 
 ### extract.py
 Handles data ingestion and staging in SQLite.
@@ -67,3 +67,20 @@ Python validation and quality checks.
 ### export.py
 Exports cleaned data to CSV or Excel.
 ![Export Script](images/export_py.png)
+
+### main.py
+Master controller that runs all stages sequentially.
+![Main Script](images/main_py.png)
+
+## Project Demo
+
+### Pipeline Execution
+![Pipeline Run](images/pipeline_run.png)
+*The ETL pipeline runs all stages sequentially, loading raw data, cleaning it, and exporting the final dataset.*
+
+### Cleaned Output
+![Cleaned Data](images/clean_csv.png)
+*Final cleaned dataset ready for analysis or reporting.*
+
+## Summary
+This project demonstrates a modular ETL pipeline built with Python, Pandas, and SQLite for automated data cleaning and validation. It showcases best practices in data engineering, including synthetic data generation, SQL transformations, and Python‑based quality checks.
