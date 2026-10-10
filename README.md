@@ -44,3 +44,26 @@ A modular Python and SQL ETL (Extract, Transform, Load) pipeline that ingests ra
    ```bash
    python main.py
    ```
+
+## Code Overview
+Below are key modules of the ETL pipeline:
+
+### main.py
+Master controller that runs all stages sequentially.
+![Main Script](images/main_py.png)
+
+### extract.py
+Handles data ingestion and staging in SQLite.
+![Extract Script](images/extract_py.png)
+
+### clean.sql
+SQL transformations for deduplication and normalization.
+![SQL Cleaning](images/clean_sql.png)
+
+### clean.py
+Python validation and quality checks.
+![Python Cleaning](images/clean_py.png)
+
+### export.py
+Exports cleaned data to CSV or Excel.
+![Export Script](images/export_py.png)
